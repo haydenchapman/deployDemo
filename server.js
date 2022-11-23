@@ -11,7 +11,7 @@ app.listen(4000,
    () => console.log(`Docked at PORT 4000`)
 )
 
-app.get('/api/cat', (req, res) => {
+app.get('http://ec2-34-211-46-152.us-west-2.compute.amazonaws.com/api/cat', (req, res) => {
     res.status(200).send('Macy')
 })
 
